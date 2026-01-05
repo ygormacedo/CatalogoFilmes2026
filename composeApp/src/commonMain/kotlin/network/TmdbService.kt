@@ -7,6 +7,7 @@ import model.MovieResponse
 class TmdbService {
 
     private val apiKey = "80ee98181f935f7d733322082c388435"
+    // CHAVE API DE ACESSO
 
     suspend fun getPopularMovies(): List<Movie> {
         val response: MovieResponse = httpClient.get(
