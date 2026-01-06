@@ -5,3 +5,12 @@ AVALIAÇÃO TÉCNICA
 Kotlin
 
 
+Customize Toolbar…
+
+
+/* PARA O PROJETO RODAR TEM QUE IR EM git log --oneline
+                DEPOIS RODAR O COMANDO ABAIXO
+                git reset --hard 07d2161
+                E AI É SÓ RODAR O APP
+             */
+
