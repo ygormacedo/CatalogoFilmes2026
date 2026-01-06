@@ -1,6 +1,6 @@
-package repository
+package data.model.repository
 
-import model.MovieStatus
+import data.model.model.MovieStatus
 
 class MovieRepository {
 

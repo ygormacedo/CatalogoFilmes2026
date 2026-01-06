@@ -1,4 +1,4 @@
-package network
+package data.model.network
 
 import io.ktor.client.*
 import io.ktor.client.plugins.contentnegotiation.*

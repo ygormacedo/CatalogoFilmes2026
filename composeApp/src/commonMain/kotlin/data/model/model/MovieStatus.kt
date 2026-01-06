@@ -1,4 +1,4 @@
-package model
+package data.model.model
 
 enum class MovieStatus {
     ASSISTIDO,

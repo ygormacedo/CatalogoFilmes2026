@@ -1,8 +1,11 @@
-package network
-import io.ktor.client.call.*
-import io.ktor.client.request.*
-import model.Movie
-import model.MovieResponse
+package data.model.remote
+
+import data.model.model.Movie
+import data.model.model.MovieResponse
+import data.model.network.httpClient
+import io.ktor.client.call.body
+import io.ktor.client.request.get
+import io.ktor.client.request.parameter
 
 class TmdbService {
 

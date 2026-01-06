@@ -1,5 +1,3 @@
-package com.example.catalogofilme
-
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -9,10 +7,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
-import model.Movie
-import model.MovieStatus
-import repository.MovieRepository
-import network.TmdbService
+import data.model.model.Movie
+import data.model.repository.MovieRepository
+import data.model.remote.TmdbService
 import ui.components.MoviePoster
 
 @Composable
