@@ -12,7 +12,19 @@ class TmdbService {
     private val apiKey = "80ee98181f935f7d733322082c388435"
     // CHAVE API DE ACESSO
 
-    suspend fun getPopularMovies(): List<Movie> {
+    suspend fun getMovieDetails(movieId: Int): Movie {
+        return httpClient.get(
+            "https://api.themoviedb.org/3/movie/$movieId"
+        ) {
+            parameter("api_key", apiKey)
+            parameter("language", "pt-BR")
+        }.body()
+    }
+
+}
+
+
+   /* suspend fun getPopularMovies(): List<Movie> {
         val response: MovieResponse = httpClient.get(
             "https://api.themoviedb.org/3/movie/popular"
         ) {
@@ -34,4 +46,4 @@ class TmdbService {
 
         return response.results
     }
-}
+}*/

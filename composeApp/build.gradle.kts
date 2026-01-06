@@ -31,6 +31,8 @@ kotlin {
             implementation(libs.androidx.activity.compose)
             implementation("io.ktor:ktor-client-okhttp:3.3.3")
             implementation("io.coil-kt:coil-compose:2.5.0")
+            implementation("androidx.navigation:navigation-compose:2.7.7")
+
 
         }
 
@@ -52,6 +54,7 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+          //  implementation("androidx.navigation:navigation-compose:2.7.7")
         }
     }
 }

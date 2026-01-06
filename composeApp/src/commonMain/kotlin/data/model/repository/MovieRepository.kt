@@ -1,16 +1,13 @@
 package data.model.repository
 
-import data.model.model.MovieStatus
+import data.model.model.Movie
+import data.model.remote.TmdbService
 
-class MovieRepository {
+class MovieRepository(
+    private val service: TmdbService = TmdbService()
+) {
 
-    private val movieStatusMap = mutableMapOf<Int, MovieStatus>()
-
-    fun setStatus(movieId: Int, status: MovieStatus) {
-        movieStatusMap[movieId] = status
-    }
-
-    fun getStatus(movieId: Int): MovieStatus? {
-        return movieStatusMap[movieId]
+    suspend fun getMovieDetails(movieId: Int): Movie {
+        return service.getMovieDetails(movieId)
     }
 }

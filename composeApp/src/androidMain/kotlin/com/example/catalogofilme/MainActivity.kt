@@ -1,6 +1,5 @@
 package com.example.catalogofilme
 
-import App
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -12,7 +11,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
 
         setContent {
-            App() // chama o App do commonMain
+            AndroidApp() // ✅ NÃO chama App() direto
         }
     }
 }

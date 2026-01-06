@@ -1,4 +1,6 @@
 package data.model.model
 
-class User {
-}
+
+data class User(
+    val email: String
+)

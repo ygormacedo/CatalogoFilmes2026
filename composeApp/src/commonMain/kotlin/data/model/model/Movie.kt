@@ -7,9 +7,10 @@ import kotlinx.serialization.Serializable
 data class Movie(
     val id: Int,
     val title: String,
+
     @SerialName("poster_path")
-    val posterPath: String
-) {
-    val posterUrl: String
-        get() = "https://image.tmdb.org/t/p/w500$posterPath"
-}
+    val posterPath: String? = null,
+
+    @SerialName("overview")
+    val overview: String = ""
+)
